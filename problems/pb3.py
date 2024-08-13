@@ -1,5 +1,10 @@
 # declare and fill out function here
-
+def youngest_student(students):
+  youngest = float('inf')
+  for key, val in students.items():
+      if val < youngest:
+          youngest = val
+      return key
 
 
 # test case
