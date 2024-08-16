@@ -1,10 +1,12 @@
 # declare and fill out function here
 def youngest_student(students):
-  youngest = float('inf')
-  for key, val in students.items():
-      if val < youngest:
-          youngest = val
-      return key
+  youngest = None
+  age = float('inf')
+  for key in students:
+    if students[key] < age:
+        age = students[key]
+        youngest = key
+  return youngest
 
 
 # test case
